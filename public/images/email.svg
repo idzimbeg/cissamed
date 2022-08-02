@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 792 612" style="enable-background:new 0 0 792 612;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:#E41617;}
+	.st1{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
+	.st2{clip-path:url(#SVGID_4_);fill:#E41617;}
+	.st3{clip-path:url(#SVGID_4_);fill:#FFFFFF;}
+	.st4{clip-path:url(#SVGID_6_);fill:#E41617;}
+	.st5{clip-path:url(#SVGID_6_);fill:#FFFFFF;}
+	.st6{fill:none;stroke:#E41617;stroke-width:8.057;stroke-linecap:round;}
+	.st7{clip-path:url(#SVGID_8_);fill:#E41617;}
+	.st8{clip-path:url(#SVGID_8_);fill:#FFFFFF;}
+	.st9{clip-path:url(#SVGID_10_);}
+	.st10{clip-path:url(#SVGID_12_);fill:#00588D;}
+	.st11{filter:url(#Adobe_OpacityMaskFilter);}
+	.st12{clip-path:url(#SVGID_12_);}
+	.st13{clip-path:url(#SVGID_12_);mask:url(#SVGID_13_);}
+	.st14{opacity:0.3;clip-path:url(#SVGID_17_);}
+	.st15{clip-path:url(#SVGID_12_);fill:none;stroke:#FFFFFF;stroke-width:0.7;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="312.41" y="170.33" width="216.49" height="216.49"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<path class="st0" d="M420.66,386.82c59.78,0,108.25-48.46,108.25-108.24s-48.46-108.24-108.25-108.24s-108.24,48.46-108.24,108.24
+		S360.88,386.82,420.66,386.82"/>
+	<path class="st1" d="M479.04,248.72v0.81c0,0.83-0.45,1.6-1.17,2.01l-57.36,32.75c-0.71,0.41-1.58,0.41-2.3,0l-57.36-32.74
+		c-0.72-0.41-1.17-1.18-1.17-2.01v-3.14c0-3.38,2.74-6.13,6.13-6.13h104.76C475.26,240.27,479.04,244.05,479.04,248.72"/>
+	<path class="st1" d="M421.14,301.7l57.9-33.06v46.68c0,3.39-2.75,6.13-6.13,6.13H365.83c-3.39,0-6.13-2.74-6.13-6.13v-46.67
+		l57.9,33.05c0.54,0.32,1.16,0.47,1.77,0.47S420.58,302.02,421.14,301.7"/>
+</g>
+</svg>
