@@ -1,7 +1,7 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 
-import { HeaderTitleLayout } from '../src/components/Layouts';
-import Map from '../src/components/map/Map';
+import { HeaderTitleLayout } from '../src/Layouts';
+import Map from '../src/map/Map';
 
 export function AboutPage() {
   const { t } = useTranslation();
@@ -9,10 +9,12 @@ export function AboutPage() {
   return (
     <HeaderTitleLayout
       // title={t('touristMedicalOffice')}
-      className="md:mt-10 sm:shrink xs:scroll-mt-20 bg-secondary-main rounded-lg"
+      className="md:mt-10 pt-32 sm:shrink xs:scroll-mt-20 rounded-lg"
       description={t('accessibility')}
     >
-      <Map />
+      <div className="bg-secondary-main flex justify-center items-center rounded-lg">
+        <Map />
+      </div>
     </HeaderTitleLayout>
   );
 }

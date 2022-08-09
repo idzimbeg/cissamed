@@ -19,8 +19,8 @@ export const HeaderTitleLayout = ({
   const className = clsx('justify-center items-center text-base', propClassName);
   return (
     <div className={className}>
-      <div className="bg-primary-light pb-16 border-none">
-        <header className="pt-2 mb-8">
+      <div className="bg-primary-light">
+        <header className=" mb-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col items-center justify-end mb-3 h-32">
               <h3 className="mb-1 md:text-2xl font-semibold text-secondary-main">{title}</h3>
@@ -29,7 +29,7 @@ export const HeaderTitleLayout = ({
               </div>
               <>{img}</>
               {description && (
-                <p className="lg:mx-56 tracking-wide justify-center md:text-xl text-primary-main text-center xs:my-32">
+                <p className="lg:mx-56 tracking-wide justify-center md:text-xl text-secondary-main text-center xs:my-32">
                   {description}
                 </p>
               )}

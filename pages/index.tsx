@@ -5,9 +5,9 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import React from 'react';
 
-import { HeaderTitleLayout } from '../src/components/Layouts';
-import { Navbar } from '../src/components/Navbar';
-import { symbol } from '../src/components/consts/consts';
+import { HeaderTitleLayout } from '../src/Layouts';
+import { Navbar } from '../src/Navbar';
+import { symbol } from '../src/consts/consts';
 
 const Home: NextPage = () => {
   return (
@@ -32,19 +32,6 @@ const Home: NextPage = () => {
           </section>
         </HeaderTitleLayout>
       </main>
-
-      {/* <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by
-          <span>
-            <Image src={backgroundImage.src} alt="CissaMed Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer> */}
     </div>
   );
 };

@@ -1,7 +1,7 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 
-import { HeaderTitleLayout } from '../src/components/Layouts';
-import { backgroundImage, email, hour, location, phone } from '../src/components/consts/consts';
+import { HeaderTitleLayout } from '../src/Layouts';
+import { backgroundImage, email, hour, location, phone } from '../src/consts/consts';
 
 export function HomePage() {
   const { t } = useTranslation();

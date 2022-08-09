@@ -1,10 +1,9 @@
-import Email from '../../../public/images/email.svg';
-import Cross from '../../../public/images/kriz.svg';
-import Logo from '../../../public/images/logo.svg';
-import Location from '../../../public/images/lokacija.svg';
-import Hours from '../../../public/images/radnovreme.svg';
-import Symbol from '../../../public/images/simbol-02.svg';
-import Phone from '../../../public/images/telefon.svg';
+import Email from '../../public/images/email.svg';
+import Logo from '../../public/images/logo.svg';
+import Location from '../../public/images/lokacija.svg';
+import Hours from '../../public/images/radnovreme.svg';
+import Symbol from '../../public/images/simbol-02.svg';
+import Phone from '../../public/images/telefon.svg';
 
 export const LANGUAGES = {
   gb: { nativeName: 'English', emoji: 'GB' },
@@ -34,4 +33,3 @@ export const email = Email;
 export const location = Location;
 export const hour = Hours;
 export const phone = Phone;
-export const cross = Cross;

@@ -1,13 +1,13 @@
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { MenuAlt1Icon } from '@heroicons/react/solid';
 import { NextPage } from 'next';
+import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { Fragment } from 'react';
 import ReactCountryFlag from 'react-country-flag';
-import { useTranslation } from 'react-i18next';
 
-import { LANGUAGES, backgroundImage, symbol } from '../src/components/consts/consts';
-import { i18n } from '../src/components/language/i18';
+import { LANGUAGES, backgroundImage, symbol } from '../consts/consts';
+import { i18n } from '../locales/i18';
 
 interface NavigationItem {
   to: string;
@@ -22,9 +22,9 @@ interface Props {
 
 const MenuItem = ({ item, onClickItem }: Props) => (
   <Link href={item.to} onClick={onClickItem}>
-    <p className="group flex items-center text-primary-light text-base whitespace-nowrap hover:text-secondary-main cursor-pointer">
+    <div className="group flex items-center text-primary-light text-base whitespace-nowrap hover:text-secondary-main cursor-pointer">
       {item.name}
-    </p>
+    </div>
   </Link>
 );
 

@@ -1,2 +1,2 @@
-export { MainLayout } from '../../../pages/MainLayout';
+export { MainLayout } from './MainLayout';
 export { HeaderTitleLayout } from './HeaderTitleLayout';

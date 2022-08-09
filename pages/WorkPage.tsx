@@ -1,7 +1,7 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 
-import { HeaderTitleLayout } from '../src/components/Layouts';
-import { symbol } from '../src/components/consts/consts';
+import { HeaderTitleLayout } from '../src/Layouts';
+import { symbol } from '../src/consts/consts';
 
 export function WorkPage() {
   const { t } = useTranslation();
