@@ -8,61 +8,61 @@ export function WorkPage() {
   const menuOptions1 = [
     {
       id: '1',
-      label: t('firstMenuEntry'),
+      label: t('work:firstMenuEntry'),
     },
     {
       id: '2',
-      label: t('eightMenuEntry'),
+      label: t('work:eightMenuEntry'),
     },
     {
       id: '3',
-      label: t('thirdMenuEntry'),
+      label: t('work:thirdMenuEntry'),
     },
     {
       id: '4',
-      label: t('thirteenthMenuEntry'),
+      label: t('work:thirteenthMenuEntry'),
     },
     {
       id: '5',
-      label: t('fifthMenuEntry'),
+      label: t('work:fifthMenuEntry'),
     },
     {
       id: '6',
-      label: t('sixthMenuEntry'),
+      label: t('work:sixthMenuEntry'),
     },
   ];
   const menuOptions2 = [
     {
       id: '7',
-      label: t('seventhMenuEntry'),
+      label: t('work:seventhMenuEntry'),
     },
     {
       id: '8',
-      label: t('secondMenuEntry'),
+      label: t('work:secondMenuEntry'),
     },
     {
       id: '9',
-      label: t('ninthMenuEntry'),
+      label: t('work:ninthMenuEntry'),
     },
     {
       id: '10',
-      label: t('fourthMenuEntry'),
+      label: t('work:fourthMenuEntry'),
     },
     {
       id: '11',
-      label: t('eleventhMenuEntry'),
+      label: t('work:eleventhMenuEntry'),
     },
     {
       id: '12',
-      label: t('twelfthMenuEntry'),
+      label: t('work:twelfthMenuEntry'),
     },
     {
       id: '13',
-      label: t('tenthMenuEntry'),
+      label: t('work:tenthMenuEntry'),
     },
   ];
   return (
-    <HeaderTitleLayout description={t('menuSchema')} className="-mt-8 bg-secondary-main">
+    <HeaderTitleLayout description={t('work:mainTitle')} className="-mt-8 bg-secondary-main">
       <div className="flex justify-between">
         <div className="flex flex-col justify-between xl:max-w-3xl text-center">
           {menuOptions1.map((item) => (

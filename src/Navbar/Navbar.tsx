@@ -1,13 +1,13 @@
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { MenuAlt1Icon } from '@heroicons/react/solid';
 import { NextPage } from 'next';
-import { useTranslation } from 'next-i18next';
+import { i18n, useTranslation } from 'next-i18next';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { Fragment } from 'react';
 import ReactCountryFlag from 'react-country-flag';
 
 import { LANGUAGES, backgroundImage, symbol } from '../consts/consts';
-import { i18n } from '../locales/i18';
 
 interface NavigationItem {
   to: string;
@@ -30,20 +30,23 @@ const MenuItem = ({ item, onClickItem }: Props) => (
 
 export const Navbar: NextPage = () => {
   const { t } = useTranslation();
+  const router = useRouter();
+
   const NAVIGATION: NavigationItem[] = [
     {
       to: '/',
-      name: t('Home'),
+      name: t('common:Home'),
     },
     {
       to: '#work',
-      name: t('Work'),
+      name: t('common:Work'),
     },
     {
       to: '#contact',
-      name: t('Where to find us'),
+      name: t('common:Where'),
     },
   ];
+  const countryFlag = i18n ? i18n.language : '';
   return (
     <>
       <Disclosure as="nav" className="bg-secondary-light fixed w-full z-10 -left-0 top-0">
@@ -84,7 +87,7 @@ export const Navbar: NextPage = () => {
                       <div>
                         <Menu.Button className="flex-row text-md text-primary-light rounded-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-secondary-main focus:ring-secondary-light">
                           <div className="mr-1">
-                            <ReactCountryFlag countryCode={i18n.language} svg />
+                            <ReactCountryFlag countryCode={countryFlag} svg />
                           </div>
                           <>{t('Languages')}</>
                         </Menu.Button>
@@ -106,7 +109,8 @@ export const Navbar: NextPage = () => {
                                   key={language}
                                   type="submit"
                                   onClick={() => {
-                                    i18n.changeLanguage(language);
+                                    router.push(`${language}`);
+                                    // i18n.changeLanguage(language);
                                   }}
                                   className="bg-primary-light p-1 rounded-md text-secondary-main hover:text-secondary-light"
                                 >

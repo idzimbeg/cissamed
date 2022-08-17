@@ -6,7 +6,7 @@ import Symbol from '../../public/images/simbol-02.svg';
 import Phone from '../../public/images/telefon.svg';
 
 export const LANGUAGES = {
-  gb: { nativeName: 'English', emoji: 'GB' },
+  en: { nativeName: 'English', emoji: 'GB' },
   hr: { nativeName: 'Hrvatski', emoji: 'HR' },
   it: { nativeName: 'Italiano', emoji: 'IT' },
   fr: { nativeName: 'Français', emoji: 'FR' },

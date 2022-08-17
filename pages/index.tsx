@@ -2,6 +2,7 @@ import AboutPage from 'AboutPage';
 import HomePage from 'HomePage';
 import WorkPage from 'WorkPage';
 import type { NextPage } from 'next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
 import React from 'react';
 
@@ -9,7 +10,18 @@ import { HeaderTitleLayout } from '../src/Layouts';
 import { Navbar } from '../src/Navbar';
 import { symbol } from '../src/consts/consts';
 
+// import { useTranslation } from 'next-i18next';
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common', 'home', 'work', 'about'])),
+    },
+  };
+}
+
 const Home: NextPage = () => {
+  // const {t} = useTranslation();
   return (
     <div>
       <Head>

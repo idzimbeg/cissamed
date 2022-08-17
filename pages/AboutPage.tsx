@@ -10,7 +10,7 @@ export function AboutPage() {
     <HeaderTitleLayout
       // title={t('touristMedicalOffice')}
       className="md:mt-10 pt-32 sm:shrink xs:scroll-mt-20 rounded-lg"
-      description={t('accessibility')}
+      description={t('about:accessibility')}
     >
       <div className="bg-secondary-main flex justify-center items-center rounded-lg">
         <Map />
