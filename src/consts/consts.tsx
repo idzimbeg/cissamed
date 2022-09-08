@@ -1,9 +1,22 @@
+import Link from 'next/link';
+
 import Email from '../../public/images/email.svg';
 import Logo from '../../public/images/logo.svg';
 import Location from '../../public/images/lokacija.svg';
 import Hours from '../../public/images/radnovreme.svg';
 import Symbol from '../../public/images/simbol-02.svg';
 import Phone from '../../public/images/telefon.svg';
+
+export interface NavigationItem {
+  to: string;
+  name: string;
+}
+
+export interface Props {
+  item: NavigationItem;
+  onClickItem?: (e: unknown) => void;
+  value?: string;
+}
 
 export const LANGUAGES = {
   en: { nativeName: 'English', emoji: 'GB' },
@@ -26,6 +39,14 @@ export const office = {
     zoom: 15,
   },
 };
+
+export const MenuItem = ({ item, onClickItem }: Props) => (
+  <Link href={item.to} onClick={onClickItem}>
+    <div className="group flex items-center text-primary-light text-base whitespace-nowrap hover:text-secondary-main cursor-pointer">
+      {item.name}
+    </div>
+  </Link>
+);
 
 export const symbol = Symbol;
 export const backgroundImage = Logo;

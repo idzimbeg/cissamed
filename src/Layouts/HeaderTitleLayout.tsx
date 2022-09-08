@@ -4,8 +4,10 @@ type HeaderTitleProps = {
   title?: never;
   description?: never | undefined | string;
   children?: React.ReactNode;
-  img?: unknown;
-  bg?: unknown;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  img?: any;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  bg?: any;
 } & JSX.IntrinsicElements['div'];
 
 export const HeaderTitleLayout = ({
@@ -21,11 +23,11 @@ export const HeaderTitleLayout = ({
     <div className={className}>
       <div className="bg-primary-light">
         <header className=" mb-8">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto my-5px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col items-center justify-end mb-3 h-32">
-              <h3 className="mb-1 md:text-2xl font-semibold text-secondary-main">{title}</h3>
+              <h3 className="mb-1 md:text-2xl font-semibold text-secondary-main invisible lg:visible ...">{title}</h3>
               <div className="mb-1">
-                <>{bg}</>
+                <div className="invisible lg:visible ...">{bg}</div>
               </div>
               <>{img}</>
               {description && (

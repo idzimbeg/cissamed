@@ -22,7 +22,7 @@ const containerStyle = {
   margin: '1.5rem auto',
 };
 
-export default function Map() {
+export function Map() {
   const [selectedOffice, setSelectedOffice] = useState<OfficeNode | undefined | null>(null);
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',

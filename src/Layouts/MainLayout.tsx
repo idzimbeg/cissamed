@@ -11,7 +11,7 @@ export function MainLayout({ children = <Outlet /> }: MainLayoutProps) {
   return (
     <>
       <Navbar />
-      <main className="max-w-screen-2xl mx-auto flex flex-col px-10 pt-1 pb-10">{children}</main>
+      <main>{children}</main>
     </>
   );
 }

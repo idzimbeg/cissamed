@@ -1,7 +1,9 @@
 {
   "address": "Kralja Zvonimira 11, Novalja",
+  "addressSchema": "Adresa",
   "contact": "Kontakt",
   "email": "cissamednv@gmail.com",
+  "emailSchema": "e-pošta",
   "introText": "Privatna smo ambulanta u centru Novalje, a svi naši djelatnici imaju dugogodišnje iskustvo u području hitne i obiteljske medicine te pedijatrije, zbog čega Vam možemo pružiti najbolju medicinsku skrb kao i najmlađim članovima Vaše obitelji!",
   "phone": "+385 95 806 5614",
   "workingHours": "10:00-22:00",

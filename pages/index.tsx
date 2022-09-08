@@ -10,8 +10,6 @@ import { HeaderTitleLayout } from '../src/Layouts';
 import { Navbar } from '../src/Navbar';
 import { symbol } from '../src/consts/consts';
 
-// import { useTranslation } from 'next-i18next';
-
 export async function getStaticProps({ locale }) {
   return {
     props: {
@@ -21,7 +19,6 @@ export async function getStaticProps({ locale }) {
 }
 
 const Home: NextPage = () => {
-  // const {t} = useTranslation();
   return (
     <div>
       <Head>

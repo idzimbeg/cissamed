@@ -1,7 +1,9 @@
 {
   "address": "Kralja Zvonimira street 11, Novalja",
+  "addressSchema": "Address",
   "contact": "Contact",
   "email": "cissamednv@gmail.com",
+  "emailSchema": "e-mail",
   "introText": "We are a private ambulatory clinic in the center of Novalja, and all our employees have many years of experience in the field of emergency and family medicine and pediatrics, which is why we can provide you with the best medical care as well as your youngest family members!",
   "phone": "+385 95 806 5614",
   "workingHours": "10:00-22:00",
