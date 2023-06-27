@@ -19,7 +19,7 @@ module.exports = {
       fontFamily: {
         karla: ['Karla', 'sans-serif'],
       },
-      plugins: [require('daisyui')],
+      plugins: [],
     },
   },
 };
